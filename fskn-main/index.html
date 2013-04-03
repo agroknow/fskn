@@ -70,12 +70,32 @@
 
 			</header>
             
-			<section id="main">
+            <section id="slideshow-wrapper">
+				
 				<div class="inner">
-                    <div class="centered" >
-                        <img style="margin-left:40px;" src="../style/images/food-banner.png" onclick="imageClick('http://fskntraining.org')" alt="layer">
-                    </div>
-                    
+					
+					<div id="layerslider">
+						
+						<div class="ls-layer">
+							<img class="ls-bg" src="../images/slideshow/FSKN_banner1.jpg" onclick="imageClick('http://www.forestfoundation.org/stuff/contentmgr/files/1/c7c1a640537d942961a0ec5b1096c43c/pdf/walk_in_the_forest.pdf')" alt="layer">
+                                </div>
+						
+						<div class="ls-layer">
+							<img class="ls-bg" src="../images/slideshow/FSKN_banner2.jpg" onclick="imageClick('http://www.daff.qld.gov.au/27_122.htm')" alt="layer">
+                                </div>
+                        
+						<div class="ls-layer">
+							<img class="ls-bg" src="../images/slideshow/FSKN_banner3.jpg" onclick="imageClick('http://greenideasproject.org/')" alt="layer">
+                                </div>
+						
+					</div>
+					
+				</div>
+				
+			</section>
+            
+			<section id="main">
+				<div class="inner">                    
 					
 					<section class="slider_block centered">
 						<h2 class="centerheader"><span>Featured Sections</span></h2>
@@ -292,7 +312,7 @@
 					navPrevNext : false,
 					navStartStop : false,
 					skin : 'lightskin',
-					skinsPath : 'style/skins/'
+					skinsPath : '../style/skins/'
 				});
 				
 				$('.is_slider').each(function() {
