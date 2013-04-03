@@ -752,22 +752,18 @@ li.slider_page_listitem > div .info > a {
 	margin:0 50px;
 	display:inline-block;
 }
-.developed_by {
-	background:url(images/uah.jpg) center bottom no-repeat;
-	width:82px;
-}
+
 .operated_by {
-	background:url(images/agroknow.jpg) center bottom no-repeat;
-	width:88px;
+    text-align:center !important;
+	background:url(images/agro-msu.png) left 20px no-repeat;
+	width:240px;
+    
 }
-.designed_by {
-	background:url(images/redpanda.jpg) center bottom no-repeat;
-	width:90px;
-}
-.supported_by {
+
+.supported_by_msu {
 	text-align:left !important;
-	background:url(images/aginfra.jpg) center bottom no-repeat;
-	width:229px;
+	background:url(images/msu.png) center 20px no-repeat;
+	width:140px;
 }
 
 /* INNERPARE LISTINGPAGE */
