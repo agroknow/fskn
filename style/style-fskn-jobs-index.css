@@ -681,11 +681,12 @@ li.slider_page_listitem > div .info > a {
 /* singleitem */
 .slider_page_singleitem {
 	width:330px;
+    height:300px;
 }
 .slider_page_singleitem > a {
 	display:inline-block;
 	border:4px solid #fff;
-	margin-bottom:23px;
+	margin-bottom:20px;
 }
 .slider_page_singleitem h2 {
 	margin-bottom:11px;
