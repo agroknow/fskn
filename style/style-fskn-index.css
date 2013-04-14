@@ -1342,7 +1342,7 @@ h2.centerheader span {
     position:relative;
     overflow:hidden;
     width:915px;
-    height:144px;
+    height:184px;
 }
 
 /*
@@ -1387,7 +1387,7 @@ h2.centerheader span {
 
 
 .items div a:hover { color:#46ad96; }
-.items div a.oer { padding-top: 120px; background:url(images/s0.png) center top no-repeat; }
+.items div a.oer {  background:url(images/s0.png) center top no-repeat; }
 .items div a.safety { background:url(images/s1.png) center top no-repeat; }
 .items div a.profiles { background:url(images/s3.png) center top no-repeat; }
 .items div a:hover.oer { background:url(images/s0h.png) center top no-repeat; }

@@ -137,6 +137,11 @@ langName['bho']='Bhojpuri';
 langName['tel']='Telugu';
 langName['gaz']='Oromifa';
 langName['twi']='Twi';
+
+langName['ar'] = 'Arabic';
+langName['ru'] = 'Russian';
+langName['zh'] = 'Chinese';
+langName['es'] = 'Spanish';
 /*--end language mapping*/
 
 
