@@ -965,7 +965,7 @@ new Ajax.JSONRequest(SERVICE_URL, {
                article({class:'item-intro '+odd},
                        header(
                               h2(img({src:data.format}),
-                                 a({href:data.location,title: data.title, target: '_blank'},data.title)),
+                                 a({href:"item.html?id="+data.identifier,title: data.title},data.title)),
                               section(p({cls:'item-intro-desc'}, data.description),
                                       aside({cls:'clearfix'},
                                             div({cls:'floatleft'},
@@ -1000,7 +1000,7 @@ new Ajax.JSONRequest(SERVICE_URL, {
                                    article({class:'item-intro ' +odd },
                                            header(
                                                   h2(img({src:data.format}),
-                                                     a({href:data.location,title: data.title, target: '_blank'},data.title)),
+                                                     a({href:"item.html?id="+data.identifier,title: data.title},data.title)),
                                                   section(p({cls:'item-intro-desc'}, data.description),
                                                           aside({cls:'clearfix'},
                                                                 div({cls:'floatright'},
@@ -1021,11 +1021,6 @@ new Ajax.JSONRequest(SERVICE_URL, {
                var label = data.val;
                if(providerName[data.val])
                {label = providerName[data.val];}
-               
-            
-               //$ Bakalides tou kosmou
-               if(label=='teacher'){label="instructor";}
-               //--
                
                a({href:'#', id: data.field + ':' + data.val, title: data.val, onclick:"toggleFacetValue('#{id}','#{parent}')".interpolate({id: data.field + ':' + data.val,parent: data.field})}, span(label), span({cls:'total'}, data.count));
                

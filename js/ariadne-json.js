@@ -16,13 +16,14 @@ function getItemJSONP(urlTemp)
                 //every item is a JSON
                 var arrayWithJSONS = JSON.parse(data);
                 
-                //var tempString = JSON.stringify(arrayWithJSONS[0]).replace("\"Agricom competences\"","\"agricomp\"");
+ //               var tempString = JSON.stringify(arrayWithJSONS[0]).replace("\"Agricom competences\"","\"agricomp\"");
                 //alert("my_1 : " + tempString);
+//                test=JSON.parse(tempString);
                 //alert(test.learningObjectives.agricomp.length);
                 
 //                for(var indx=0, length = test.learningObjectives.agricomp.length; indx<length; indx++)
 //                {
-                    getCompetence(urlTemp);
+//                    getCompetence('http://83.212.96.169:8080/akifRetriever/getAKIF?ids='+test.learningObjectives.agricomp[indx]);
 //                }
                 
 //-------------
@@ -386,8 +387,10 @@ function getCompetence(urlTemp){
                 success: function(data)
                 {
                 
+                var arrayWithJSONS = JSON.parse(data);
+                
                 alert("getCompetence : " + urlTemp);
-                document.getElementById('related_competences').innerHTML = data ;
+                document.getElementById('related_competences').innerHTML = arrayWithJSONS ;
                                     
                 }
                 

@@ -71,11 +71,7 @@
                        <div class="remove_filters" style="padding: 3px 0 3px 0;">
                            <a href="" style="font-size:12px;" onclick="initialSearch();pagination_hide();">remove filters</a>
                        </div>
-                         <div class="links_left">
-                             <div class="links_left_title">A data pool curated and maintained by:</div>
-                             <div class="links_left_content">MICHIGAN STATE UNIVERSITY<br/> &amp; Agro-Know Technologies</div>
 
-                             </div>
                        </aside>
 
 						<section class="listing">
@@ -226,12 +222,12 @@
             function customizeFinder() {
                 return {
                     /* limit collections|providers*/
-                    //"selectedProviders":["aglrfoodsafety"],
+                    "selectedProviders":["aglrfoodsafety","aglrfskn"],
                                         
                     "externalSources": ["wp","scr","ss","gb"],
                     "pageContainers": ['bottom','top'],
                     "facets": ["provider","language","lrt", "context", "iur", "tagr"], 
-                    "limitFacetDisplay": {"language":["en","eng;","eng","eng; eng","el","fr","nl","de","et","hu","ro","tr"]},
+                    "limitFacetDisplay": {"language":["en","eng;","eng","eng; eng","el","fr","nl","de","et","hu","ro","tr","ar","ru","zh","es"]},
                     "maxLengthDescription":  300,
                     "pageSize": 6,
                     "repositoryName": "Organic.Edunet",//find this in the ariadne.properties file inside your Ariadne folder  ex."repositoryName":"AriadneNext Repository"
