@@ -382,26 +382,26 @@ function getItemJSONP(urlTemp)
                 }})}
 
 //------------------------------------------------Get_Competence---------------------------------------------------------//
-
-function getCompetence(urlTemp){
-    jQuery.ajax({
-                url: urlTemp,
-                mimeType: "textPlain",
-                dataType: "json",
-                success: function(data)
-                {
-                
-                var thisJson = JSON.stringify(data[0]);
-                var arrayWithJSONS = JSON.parse(thisJson);
-                
-                var thisDiv = document.createElement("div");
-                thisDiv.appendChild(document.createNode(thisDiv)arrayWithJSONS.languageBlocks.en.title);
-                
-                alert("thisJson : " + thisJson);
-                document.getElementById('related_competences').appendChild(document.createNode(thisDiv));                                    
-                }
-                
-                })}
+//
+//function getCompetence(urlTemp){
+//    jQuery.ajax({
+//                url: urlTemp,
+//                mimeType: "textPlain",
+//                dataType: "json",
+//                success: function(data)
+//                {
+//                
+//                var thisJson = JSON.stringify(data[0]);
+//                var arrayWithJSONS = JSON.parse(thisJson);
+//                
+//                var thisDiv = document.createElement("div");
+//                thisDiv.appendChild(document.createNode(thisDiv)arrayWithJSONS.languageBlocks.en.title);
+//                
+//                alert("thisJson : " + thisJson);
+//                document.getElementById('related_competences').appendChild(document.createNode(thisDiv));                                    
+//                }
+//                
+//                })}
 
 
 
