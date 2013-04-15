@@ -18,7 +18,7 @@ function getItemJSONP(urlTemp)
                 //every item is a JSON
               
                var arrayWithJSONS = JSON.parse(data);
-//                
+                
 //                var tempString = JSON.stringify(arrayWithJSONS[0]).replace("\"Agricom competences\"","\"agricomp\"");
 //                //alert("my_1 : " + tempString);
 //            
@@ -394,9 +394,10 @@ function getCompetence(urlTemp){
                 var thisJson = JSON.stringify(data[0]);
                 var arrayWithJSONS = JSON.parse(thisJson);
                 
+                var thisDiv = "<div>"
+                
                 alert("thisJson : " + thisJson);
-                document.getElementById('related_competences').innerHTML = arrayWithJSONS.languageBlocks.en.title ;
-                                    
+                document.getElementById('related_competences').appendChild(document.createTextNode(arrayWithJSONS.languageBlocks.en.title));                                    
                 }
                 
                 })}
