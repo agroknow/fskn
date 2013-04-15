@@ -18,7 +18,7 @@ function getItemJSONP(urlTemp)
                 //every item is a JSON
               
                var arrayWithJSONS = JSON.parse(data);
-                
+//                
 //                var tempString = JSON.stringify(arrayWithJSONS[0]).replace("\"Agricom competences\"","\"agricomp\"");
 //                //alert("my_1 : " + tempString);
 //            
@@ -395,10 +395,11 @@ function getItemJSONP(urlTemp)
 //                var arrayWithJSONS = JSON.parse(thisJson);
 //                
 //                var thisDiv = document.createElement("div");
-//                thisDiv.appendChild(document.createNode(thisDiv)arrayWithJSONS.languageBlocks.en.title);
+//                thisDiv.class("test");
+//                thisDiv.appendChild(document.createTextNode(arrayWithJSONS.languageBlocks.en.title));
 //                
 //                alert("thisJson : " + thisJson);
-//                document.getElementById('related_competences').appendChild(document.createNode(thisDiv));                                    
+//                document.getElementById('related_competences').appendChild((thisDiv));                                    
 //                }
 //                
 //                })}
