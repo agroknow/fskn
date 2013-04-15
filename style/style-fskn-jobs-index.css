@@ -1399,6 +1399,11 @@ h2.centerheader span {
    padding-left:140px;
 }
 
+.rowOfTwo
+{
+    padding-left:250px;
+}
+
 .items div a {
 	display:inline-block;
 	height:30px;
