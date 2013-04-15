@@ -174,6 +174,34 @@ header#mainheader {
 }
 /*--*/
 
+
+/*navigation path*/
+#navigation-path
+{
+    background-color:none;
+    height:30px;
+    color:white;
+    font-size:14px;
+}
+
+#navigation-path a
+{
+    color:white;
+}
+
+#navigation-path a:hover
+{
+    color:yellow;
+    text-decoration:underline;
+}
+
+.here
+{
+    text-decoration:underline;
+    font-size:14px;
+}
+/*---*/
+
 .top-menu { 
 	height:49px;
 	line-height:49px;
