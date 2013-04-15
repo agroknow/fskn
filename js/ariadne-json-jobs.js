@@ -394,10 +394,11 @@ function getCompetence(urlTemp){
                 var thisJson = JSON.stringify(data[0]);
                 var arrayWithJSONS = JSON.parse(thisJson);
                 
-                var thisDiv = "<div>"
+                var thisDiv = document.createElement("div");
+                thisDiv.appendChild(document.createNode(thisDiv)arrayWithJSONS.languageBlocks.en.title);
                 
                 alert("thisJson : " + thisJson);
-                document.getElementById('related_competences').appendChild(document.createTextNode(arrayWithJSONS.languageBlocks.en.title));                                    
+                document.getElementById('related_competences').appendChild(document.createNode(thisDiv));                                    
                 }
                 
                 })}
