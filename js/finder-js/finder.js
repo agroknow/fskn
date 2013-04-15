@@ -184,6 +184,8 @@ providerName['aglrfaocdx']='FAO Codex';
 providerName['aglrfskn']='Food Safety Knowledge Network';
 providerName['aglrfoodsafety']='Food Safety OER';
 providerName['aglrfaorighttofood']='FAO Right to Food';
+providerName['aglragrjobs']='Agricom Job Profiles';
+providerName['aglragricom']='Agricom Competences';
 
 /*--end providers mapping*/
 

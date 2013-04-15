@@ -16,15 +16,16 @@ function getItemJSONP(urlTemp)
                 //every item is a JSON
                 var arrayWithJSONS = JSON.parse(data);
                 
- //               var tempString = JSON.stringify(arrayWithJSONS[0]).replace("\"Agricom competences\"","\"agricomp\"");
+              var tempString = JSON.stringify(arrayWithJSONS[0]).replace("\"Agricom competences\"","\"agricomp\"");
                 //alert("my_1 : " + tempString);
-//                test=JSON.parse(tempString);
-                //alert(test.learningObjectives.agricomp.length);
+            
+                test=JSON.parse(tempString);
+                alert(test.learningObjectives.agricomp);
                 
-//                for(var indx=0, length = test.learningObjectives.agricomp.length; indx<length; indx++)
-//                {
-//                    getCompetence('http://83.212.96.169:8080/akifRetriever/getAKIF?ids='+test.learningObjectives.agricomp[indx]);
-//                }
+                for(var indx=0, length = test.learningObjectives.agricomp.length; indx<length; indx++)
+                {
+                    getCompetence('http://83.212.96.169:8080/akifRetriever/getAKIF?ids='+test.learningObjectives.agricomp[indx]);
+                }
                 
 //-------------
                 if(arrayWithJSONS[0].languageBlocks!==undefined && arrayWithJSONS[0].languageBlocks.length!==0)
@@ -387,6 +388,7 @@ function getCompetence(urlTemp){
                 success: function(data)
                 {
                 
+                alert("Data: "+data);
                 var arrayWithJSONS = JSON.parse(data);
                 
                 alert("getCompetence : " + urlTemp);
