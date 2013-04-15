@@ -794,7 +794,7 @@ li.slider_page_listitem > div .info > a {
     width:140px;
     margin-right:90px;
     text-align:left;
-	background:url(images/msu.png) center 20px no-repeat;
+	background:url(images/msu.png) center  no-repeat;
 }
 
 .agroknowCombined
@@ -806,6 +806,21 @@ li.slider_page_listitem > div .info > a {
 	background:url(images/agroknow.png) center no-repeat;
 }
 
+.glnCombined{
+    text-align:right;
+    width:100px;
+    margin-right:0px;
+    padding:0px 0px 0px 5px;
+	background:url(images/gln.png) center no-repeat;
+}
+
+.fsknCombined{
+    width:220px;
+    margin-right:90px;
+    text-align:left;
+	background:url(images/fskn.png) center no-repeat;
+
+}
 /* INNERPARE LISTINGPAGE */
 body.innerpage #main {
 	padding-top:20px;
@@ -1387,7 +1402,7 @@ h2.centerheader span {
     width:915px;
     position:absolute;
     clear:both;
-    padding-left:140px;
+    /*padding-left:140px;*//*if have only 3 items*/
 }
 
 .items div {

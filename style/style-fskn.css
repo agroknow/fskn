@@ -799,7 +799,7 @@ li.slider_page_listitem > div .info > a {
     width:140px;
     margin-right:90px;
     text-align:left;
-	background:url(images/msu.png) center 20px no-repeat;
+	background:url(images/msu.png) center  no-repeat;
 }
 
 .agroknowCombined
@@ -809,6 +809,22 @@ li.slider_page_listitem > div .info > a {
     margin-right:0px;
     padding:0px 0px 0px 5px;
 	background:url(images/agroknow.png) center no-repeat;
+}
+
+.glnCombined{
+    text-align:right;
+    width:100px;
+    margin-right:0px;
+    padding:0px 0px 0px 5px;
+	background:url(images/gln.png) center no-repeat;
+}
+
+.fsknCombined{
+    width:220px;
+    margin-right:90px;
+    text-align:left;
+	background:url(images/fskn.png) center no-repeat;
+    
 }
 /*----*/
 
@@ -1327,6 +1343,37 @@ a.setrightbottom {
 .review-line {
 	font-size:12px;
 }
+
+/*--end item---*/
+
+
+/*related competences*/
+#related_competences a{
+    
+    font-size:18px;
+    color: #41647b;
+    
+}
+
+#related_competences a:hover{
+    text-decoration:underline;
+}
+
+#related_competences div{
+    padding:8px 0px 3px 0px;
+}
+.related-header
+{
+    font-size:20px;
+    padding-top:20px;
+    color: #41647b;
+    border-bottom: 2px solid #41647b;
+    width:200px;
+}
+
+/*end related-comp*/
+
+
 /* flags */
 span.flag {
 	text-indent:-9999px;

@@ -18,16 +18,22 @@ function getItemJSONP(urlTemp)
                 //every item is a JSON
               
                var arrayWithJSONS = JSON.parse(data);
-//                
+                
 //                var tempString = JSON.stringify(arrayWithJSONS[0]).replace("\"Agricom competences\"","\"agricomp\"");
 //                //alert("my_1 : " + tempString);
 //            
 //                test=JSON.parse(tempString);
-//                alert(test.learningObjectives.agricomp);
+//                //alert(test.learningObjectives.agricomp);
 //                
+//                var relatedHeader = "<p class=\"related-header\">Related Competences</p>"
+//                
+//                if(test.learningObjectives!=undefined){
+//                
+//                jQuery('#related_competences').append(relatedHeader);//header for related content IF it exists
 //                for(var indx=0, length = test.learningObjectives.agricomp.length; indx<length; indx++)
 //                {
 //                    getCompetence('http://83.212.96.169:8080/akifRetriever/getAKIF?ids='+test.learningObjectives.agricomp[indx]);
+//                }
 //                }
                 
 //-------------
@@ -370,39 +376,32 @@ function getItemJSONP(urlTemp)
                 }
                 
                 }
-                
-//-------------
-                
-                
-                
-                
-                
-                
+                    
                 //end of -success- of getItemJSONP
                 }})}
 
+
+
 //------------------------------------------------Get_Competence---------------------------------------------------------//
 //
-//function getCompetence(urlTemp){
-//    jQuery.ajax({
-//                url: urlTemp,
-//                mimeType: "textPlain",
-//                dataType: "json",
-//                success: function(data)
-//                {
-//                
-//                var thisJson = JSON.stringify(data[0]);
-//                var arrayWithJSONS = JSON.parse(thisJson);
-//                
-//                var thisDiv = document.createElement("div");
-//                thisDiv.class("test");
-//                thisDiv.appendChild(document.createTextNode(arrayWithJSONS.languageBlocks.en.title));
-//                
-//                alert("thisJson : " + thisJson);
-//                document.getElementById('related_competences').appendChild((thisDiv));                                    
-//                }
-//                
-//                })}
+function getCompetence(urlTemp){
+    jQuery.ajax({
+                url: urlTemp,
+                mimeType: "textPlain",
+                dataType: "json",
+                success: function(data)
+                {
+                
+                var thisJson = JSON.stringify(data[0]);
+                var arrayWithJSONS = JSON.parse(thisJson);
+                
+                var thisDiv = "<div><a href=\"item.html?id="+urlTemp.split("=")[1]+"\">"+arrayWithJSONS.languageBlocks.en.title+"</a></div>";
+                
+                //alert("thisJson : " + thisJson);
+                jQuery('#related_competences').append(thisDiv);
+                }
+                
+                })}
 
 
 
