@@ -19,22 +19,22 @@ function getItemJSONP(urlTemp)
               
                var arrayWithJSONS = JSON.parse(data);
                 
-                var tempString = JSON.stringify(arrayWithJSONS[0]).replace("\"Agricom competences\"","\"agricomp\"");
-                //alert("my_1 : " + tempString);
-            
-                test=JSON.parse(tempString);
-                //alert(test.learningObjectives.agricomp);
-                
-                var relatedHeader = "<p class=\"related-header\">Related Competences</p>"
-                
-                if(test.learningObjectives!=undefined){
-                
-                jQuery('#related_competences').append(relatedHeader);//header for related content IF it exists
-                for(var indx=0, length = test.learningObjectives.agricomp.length; indx<length; indx++)
-                {
-                    getCompetence('http://83.212.96.169:8080/akifRetriever/getAKIF?ids='+test.learningObjectives.agricomp[indx]);
-                }
-                }
+//                var tempString = JSON.stringify(arrayWithJSONS[0]).replace("\"Agricom competences\"","\"agricomp\"");
+//                //alert("my_1 : " + tempString);
+//            
+//                test=JSON.parse(tempString);
+//                //alert(test.learningObjectives.agricomp);
+//                
+//                var relatedHeader = "<p class=\"related-header\">Related Competences</p>"
+//                
+//                if(test.learningObjectives!=undefined){
+//                
+//                jQuery('#related_competences').append(relatedHeader);//header for related content IF it exists
+//                for(var indx=0, length = test.learningObjectives.agricomp.length; indx<length; indx++)
+//                {
+//                    getCompetence('http://83.212.96.169:8080/akifRetriever/getAKIF?ids='+test.learningObjectives.agricomp[indx]);
+//                }
+//                }
                 
 //-------------
                 if(arrayWithJSONS[0].languageBlocks!==undefined && arrayWithJSONS[0].languageBlocks.length!==0)
