@@ -494,7 +494,6 @@ function parseQueryString(initUpdate){
         }
         
         if (!urlSelectedProviders && selectedProviders){
-            selectedProviders = selectedProviders.replace("#","");
             clauses.push({language:'anyOf',expression:'provider:'+selectedProviders});
         }
         
