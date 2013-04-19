@@ -477,19 +477,27 @@ function parseQueryString(initUpdate){
         var urlSelectedProviders = getUrlVars()["providers"];
         
         if (lrt) {
+            lrt = lrt.replace("#","").replace("%20", " ");
             clauses.push({language:'anyOf',expression:'lrt:'+ lrt});
         }
         if (key) {
+            key = key.replace("#","").replace("%20", " ");
             clauses.push({language:'anyOf',expression:'keyword:' + key});
         }
         if (context) {
+            context = context.replace("#","").replace("%20", " ");
             clauses.push({language:'anyOf',expression:'context:' + context});
         }
         if (urlSelectedProviders){
+            urlSelectedProviders = urlSelectedProviders.replace("#","").replace("%20", " ");
             clauses.push({language:'anyOf',expression:'provider:'+urlSelectedProviders});
         }
         
-        if (!urlSelectedProviders && selectedProviders) clauses.push({language:'anyOf',expression:'provider:'+selectedProviders});
+        if (!urlSelectedProviders && selectedProviders){
+            selectedProviders = selectedProviders.replace("#","").replace("%20", " ");
+            clauses.push({language:'anyOf',expression:'provider:'+selectedProviders});
+        }
+        
         //clauses.push({language:'anyOf',expression:'keyword:' + key});
         //clauses.push({language:'anyOf',expression:'lrt:image'});
         // add the below to code @ github. It is to limit the results only for OE collection //
