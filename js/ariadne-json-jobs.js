@@ -27,7 +27,7 @@ function getItemJSONP(urlTemp)
                 
                 var relatedHeader = "<p class=\"related-header\">Related Competences</p>"
                 
-                if(test.learningObjectives!=undefined)
+                if(test.learningObjectives!=undefined && test.learningObjectives.agricomp!=undefined)
                 {
                 jQuery('#related_competences').append(relatedHeader);//header for related content IF it exists
                 for(var indx=0, length = test.learningObjectives.agricomp.length; indx<length; indx++)
