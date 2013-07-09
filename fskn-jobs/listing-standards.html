@@ -29,7 +29,7 @@
         <SCRIPT type="text/javascript" src="../js/finder-js/jsonp.js"></SCRIPT>
         <SCRIPT type="text/javascript" src="../js/finder-js/sha1.js"></SCRIPT>
         <SCRIPT type="text/javascript" src="../js/finder-js/jaml-all.js"></SCRIPT>
-        <SCRIPT type="text/javascript" src="../js/finder-js/finder-job-profiles.js"></SCRIPT>
+        <SCRIPT type="text/javascript" src="../js/finder-js/finder-standards.js"></SCRIPT>
 	
 	</head>
 	
@@ -50,8 +50,7 @@
                         </div>
 					</div>
                     
-                    <div id="navigation-path">You are here:&nbsp;<a href="../fskn-main/index.html">FSKN Home</a> >&nbsp; <a href="#"> Food Safety Job Profiles</a> >&nbsp; <span class="here"> Results </span></div>
-                    
+                    <div id="navigation-path">You are here:&nbsp;<a href="../fskn-main/index.html">FSKN Home</a> >&nbsp; <a href="index.html"> Food Safety Standards</a> >&nbsp; <span class="here"> Results</span></div>
 				</div>
                 
 			</header>
@@ -97,7 +96,6 @@
                     <a href="http://www.msu.edu" class="msuCombined" target="_blank">by</a>
                 </div>
             </section>
-            
             
 		</section>
         
@@ -227,11 +225,11 @@
             function customizeFinder() {
                 return {
                     /* limit collections|providers*/
-                    "selectedProviders":["aglragrjobs"],
+                    "selectedProviders":["aglrfaocdx","aglrfskn","aglrfoodsafety"],
                                         
                     "externalSources": ["wp","scr","ss","gb"],
                     "pageContainers": ['bottom','top'],
-                    "facets": ["provider","language"], 
+                    "facets": ["provider","language","lrt", "context", "iur", "tagr"], 
                     "limitFacetDisplay": {"language":["en","eng;","eng","eng; eng","el","fr","nl","de","et","hu","ro","tr","ar","ru","zh","es"]},
                     "maxLengthDescription":  300,
                     "pageSize": 6,

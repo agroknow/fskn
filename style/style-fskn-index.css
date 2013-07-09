@@ -1304,6 +1304,10 @@ span.frflag {
 	background:url(images/flag_fr.png) 0 0 no-repeat;
         text-indent:-9999px;
 }
+span.arflag {
+	background:url(images/flag_ar.png) 0 0 no-repeat;
+    text-indent:-9999px;
+}
 a.flag {
 	text-indent:-9999px;
 	margin-left:3px;
