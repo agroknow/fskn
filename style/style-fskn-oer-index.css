@@ -1,4 +1,9 @@
-body { background:#fdfdfd; font-family:Tahoma, sans-serif; font-size: 14px; color: #757575; }
+/*
+ their dark green : #709431
+ their light green : #add14d
+ 
+ */
+body { font-size: 14px; color: #757575; }
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -174,33 +179,37 @@ header#mainheader {
 }
 /*--*/
 
-
 /*navigation path*/
 #navigation-path
 {
     background-color:none;
     height:30px;
-    color:white;
+    color:#add14d;
     font-size:14px;
 }
 
 #navigation-path a
 {
-    color:white;
+    color:#add14d;
 }
 
 #navigation-path a:hover
 {
     color:yellow;
     text-decoration:underline;
+    font-weight:bold;
+    color:#709431;
 }
 
 .here
 {
-    text-decoration:underline;
+    text-decoration:none;
+    color:#709431;
     font-size:14px;
+    font-weight:bold;
 }
 /*---*/
+
 
 .top-menu { 
 	height:49px;
@@ -669,6 +678,11 @@ div.width330 {
 div.moduletable.slidermodule {
 	position:relative;
 }
+
+div.moduletable.slidermodule h3{
+	font-size:18px;
+}
+
 div.slider_page {
 	padding:3px 50px 0 3px;
 }
@@ -709,6 +723,10 @@ li.slider_page_listitem > div .info > a {
 /* singleitem */
 .slider_page_singleitem {
 	width:330px;
+}
+
+div.slider_page ul{
+	list-style:none;
 }
 .slider_page_singleitem > a {
 	display:inline-block;
@@ -755,14 +773,14 @@ li.slider_page_listitem > div .info > a {
 	background:url(images/pager_sprite.png) -27px -20px no-repeat;
 	margin-left:5px;
 }
-.pager a {
+.pager_ak a {
 	text-indent:-9999px;
 	background:url(images/pager_sprite.png) 3px 3px no-repeat;
 	height:13px;
 	width:13px;
 	display:inline-block;
 }
-.pager a.activeSlide, .pager a:hover {
+.pager_ak a.activeSlide, .pager_ak a:hover {
 	background-position:3px -20px;
 }
 
@@ -1007,7 +1025,7 @@ body.innerpage #main {
 	margin-top:15px;
 	width:710px;
 }
-.odd {
+.odd_ak {
 	background:#eeeeee;
 }
 .item-intro {

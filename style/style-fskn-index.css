@@ -1,4 +1,4 @@
-body { background:#fdfdfd; font-family:Tahoma, sans-serif; font-size: 14px; color: #757575; }
+body { font-size: 14px; color: #757575; }
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -49,20 +49,7 @@ h3 {
 /* float clearing for everyone else */
 .clearfix:after{  clear: both; content: "."; display: block; height: 0; visibility: hidden; font-size: 0;}
 
-/* STICK FOOTER */
-html, body {height: 100%;}
-#wrap {min-height: 100%;width:100%}
-#main {/*overflow:auto;*/ /*padding-bottom:352px;*/}  /* must be same height as the footer */
 
-footer#mainfooter, #footer {
-	position: relative;
-	margin-top:-352px; /* negative value of footer height */
-	height:352px;
-	clear:both;
-}
-footer#mainfooter {
-	background:url(images/footer_bg_line.jpg) 0 0 repeat-x;
-}
 /*Opera Fix*/
 body:before {
 	content:"";
@@ -80,76 +67,6 @@ body:before {
 	margin-bottom:150px;
 }
 
-/* FOOTER */
-/*footer#mainfooter .inner {
-	background:url(images/footer_bg.png) 0 0 no-repeat;
-	display:block;
-	height:49px;
-	color:#124e62;
-	line-height:1.3em;
-	width:940px;
-	padding:96px 10px 0 10px;
-}
-footer#mainfooter .inner a {
-	color:#fff;
-}*/
-footer#mainfooter .inner {
-	padding:33px 0 0 0;
-	font-family:Arial, serif;
-}
-footer#mainfooter .inner .footerblock {
-	margin-left:112px;
-}
-footer#mainfooter .inner .footerblock:first-child {
-	margin-left:0;
-}
-footer#mainfooter .inner .floatright.footerblock {
-	margin:0;
-}
-footer#mainfooter .inner h3 {
-	color:#46ad96;
-	font-size:18px;
-	font-weight:bold;
-	text-transform:uppercase;
-	border-bottom:none;
-	margin-bottom:8px;
-	padding:0;
-}
-footer#mainfooter .inner ul {
-	margin-bottom:10px;
-}
-footer#mainfooter .inner ul li {
-	border-top:1px solid #083646;
-	padding:6px 0 6px;
-}
-footer#mainfooter .inner ul li:first-child {
-	border-top:none;
-}
-footer#mainfooter .inner a {
-	color:#fff;
-}
-footer#mainfooter .inner a:hover {
-	color:#46ad96;
-}
-footer#mainfooter .inner h3.aboutus { margin-top:36px; }
-footer#mainfooter .inner h3.aboutus ~ p {
-	display:inline-block;
-	width:160px;
-	color:#fff;
-	line-height:1.4em;
-	font-size:12px;
-}
-.footer_social { width:250px; margin-top:22px; }
-.footer_social a {
-	display:block;
-	float:left;
-	text-indent:-9999px;
-	background:url(images/footer_social_sample.jpg) 0 0 no-repeat;
-	width:58px;
-	height:58px;
-	margin:0 22px 22px 0;
-}
-
 
 .resultsLeft
 {
@@ -163,36 +80,33 @@ footer#mainfooter .inner h3.aboutus ~ p {
 {
     background-color:none;
     height:30px;
-    color:white;
+    color:#add14d;
     font-size:14px;
 }
 
 #navigation-path a
 {
-    color:white;
-    
+    color:#add14d;
 }
 
 #navigation-path a:hover
 {
     color:yellow;
     text-decoration:underline;
+    font-weight:bold;
+    color:#709431;
 }
 
 .here
 {
-    text-decoration:underline;
+    text-decoration:none;
+    color:#709431;
     font-size:14px;
+    font-weight:bold;
 }
 /*---*/
 
 
-/* HEADER */
-header#mainheader {
-	/*min-height:100px;*/ /*DEACTIVATED TO HIDE THE TOP VERTICAL LOGO
-                           border-bottom:4px solid #27343b;*/
-    background:#27343b;
-}
 
 /*TOP VERTICAL LOGO*/
 .index-logo {
@@ -317,9 +231,7 @@ header#mainheader {
 }
 
 .moduletable_mainsearch
-{
-    padding: 0 0 10px 0;
-}
+{}
 
 .moduletable_mainsearch form {
 	/*position:relative;*/
@@ -334,11 +246,12 @@ header#mainheader {
 .moduletable_mainsearch form > div input {
 	border:0;
 	background:transparent;
-	height: 40px;
+	height: 30px;
 	margin:11px 0 0 18px;
-	width: 385px;
+	width: 440px;
 	font-size:25px;
 	font-family:'Signika', Arial, sans-serif;
+    box-shadow: none;
 }
 .ie8 .moduletable_mainsearch form > div input {
 	line-height:40px;
@@ -675,6 +588,9 @@ div.moduletable.slidermodule {
 div.slider_page {
 	padding:3px 50px 0 3px;
 }
+div.slider_page ul{
+	list-style:none;
+}
 /* listitem */
 li.slider_page_listitem {
 	padding-bottom:22px;
@@ -758,14 +674,14 @@ li.slider_page_listitem > div .info > a {
 	background:url(images/pager_sprite.png) -27px -20px no-repeat;
 	margin-left:5px;
 }
-.pager a {
+.pager_ak a {
 	text-indent:-9999px;
 	background:url(images/pager_sprite.png) 3px 3px no-repeat;
 	height:13px;
 	width:13px;
 	display:inline-block;
 }
-.pager a.activeSlide, .pager a:hover {
+.pager_ak a.activeSlide, .pager a:hover {
 	background-position:3px -20px;
 }
 
@@ -1008,9 +924,11 @@ body.innerpage #main {
 	margin-top:15px;
 	width:710px;
 }
-.odd {
+
+/*.odd {
 	background:#eeeeee;
-}
+}*/
+
 .item-intro {
 	padding:8px 9px;
 	font-family:Tahoma, sans-serif;

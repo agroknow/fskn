@@ -1,4 +1,10 @@
-body { font-family: 'Signika',Tahoma, sans-serif; font-size: 14px; color: #757575; }
+/*
+ their dark green : #709431
+ their light green : #add14d
+ 
+-previous blue #41647b
+ */
+body { font-size: 14px; color: #757575; }
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -12,14 +18,14 @@ a.secondary:hover { color:#136e5a; }
 a > img { display:block; }
 
 h1, h2, h3, h4, p { margin:0 0 5px 0; padding:0; }
-h1 { font-size:20px; font-weight:normal; color:#41647b; }
-h2 { font-size:17px; font-weight:normal; color:#41647b; }
-h3, h4 { font-size:14px; font-weight:normal; color:#41647b; }
+h1 { font-size:20px; font-weight:normal; color:#709431; }
+h2 { font-size:17px; font-weight:normal; color:#709431; }
+h3, h4 { font-size:14px; font-weight:normal; color:#709431; }
 p { line-height:1.5em }
 
 h3 {
 	font-size:24px;
-	border-bottom:2px solid #41647b;
+	border-bottom:2px solid #709431;
 	padding-bottom:5px;
 	margin-bottom:28px;
 }
@@ -130,26 +136,29 @@ nav.credits a.redpanda {
 {
     background-color:none;
     height:30px;
-    color:white;
+    color:#add14d;
     font-size:14px;
-    padding-left:250px;
 }
 
 #navigation-path a
 {
-    color:white;
+    color:#add14d;
 }
 
 #navigation-path a:hover
 {
     color:yellow;
     text-decoration:underline;
+    font-weight:bold;
+    color:#709431;
 }
 
 .here
 {
-    text-decoration:underline;
+    text-decoration:none;
+    color:#709431;
     font-size:14px;
+    font-weight:bold;
 }
 /*---*/
 
@@ -255,7 +264,7 @@ header#mainheader {
 }
 .moduletable_mainsearch
 {
-    padding: 0 0 10px 0;
+    padding: 0px;
 }
 
 .moduletable_mainsearch form {
@@ -271,9 +280,9 @@ header#mainheader {
 .moduletable_mainsearch form > div input {
 	border:0;
 	background:transparent;
-	height: 40px;
+	height: 30px;
 	margin:11px 0 0 18px;
-	width: 385px;
+	width: 365px;
 	font-size:25px;
 	font-family:'Signika', Arial, sans-serif;
 }
@@ -588,7 +597,7 @@ nav #jMenu li ul li a:hover {
 
 #search_terms /*indicator of result in left menu */
 {
-    color:white;
+    color:#709431;
 }
 
 #insert_summary /*indicator of result in left menu*/
@@ -598,13 +607,13 @@ nav #jMenu li ul li a:hover {
 
 #search_status /*indicator of processing time in left menu*/
 {
-    color:white;
+    color:#709431;
     margin:10px 0px 15px 15px;
 }
 
 .left_details /*details of the above items (results & processing time)*/
 {
-    color:#62a6d3;
+    color:#add14d;
 }
 /*-----*/
 
@@ -835,13 +844,15 @@ body.innerpage #main {
 }
 /* FILTER */
 
-
+/*
+ their dark green : #709431
+ their light green : #add14d
+ */
 
 .filter {
 	width:230px;
-	background:#27343b;
+	background:none;
     margin-bottom:30px;
-
 	-webkit-border-radius:0 0 4px 4px;
 	-moz-border-radius:0 0 4px 4px;
 	border-radius:0 0 4px 4px;
@@ -910,7 +921,7 @@ body.innerpage #main {
     max-height: 215px;
 }
 .filter_child a {
-    color:white;
+    color:#709431;
     background:url(images/unchecked.png) 3px center no-repeat;
 	padding:7px 13px 7px 20px;
 	position:relative;
@@ -919,17 +930,18 @@ body.innerpage #main {
 }
 .filter_child a:hover
 {
-    background-color:#f8fde8;
+    color:#709431;
+    background: url(images/checked.png) 3px center no-repeat;
     font-weight:bold;
-    color:#3c5b6f;
+    color:#709431;
 }
 
 .filter_child a.facet-selected
 {
     font-size:14px;
     font-weight:bold;
-    color:#3c5b6f;
-    background:white url(images/checked.png) 3px center no-repeat;
+    color:#709431;
+    background: url(images/checked.png) 3px center no-repeat;
 }
 
 .filter_child span {
@@ -956,18 +968,18 @@ body.innerpage #main {
 	line-height:16px;
 	margin:5px 10px 0 0;
 	padding:0px 8px;
-	border:1px solid #20272d;
+	border:1px solid #709431;
 	-webkit-border-radius:4px;
 	-moz-border-radius:4px;
 	border-radius:4px;
-	background-color:#2e3740;
+	background-color:#709431;
 	font-weight:normal;
 	text-align:center;
 }
 
 .filter_child a.facet-selected span.total
 {
-    background-color:#3c5b6f;   
+    background-color:#709431;   
 }
 
 .remove_filters {
@@ -982,7 +994,7 @@ body.innerpage #main {
 	height:18px;
 	line-height:18px;
 	font-size:10px;
-    color:#41647b;
+    color:#709431;
 }
 .remove_filters a:hover
 {
@@ -1050,19 +1062,19 @@ body.innerpage #main {
 
 .listing {
 	margin-top:15px;
-    width:780px;
+    width:720px;
     padding-left:5px;
     padding-bottom:50px;
     
 }
-.odd {
+.odd_ak {
 	background-color:#ffffff;
     border-bottom: 1px solid #E0E0E0;
     border-top: 1px solid #E0E0E0;
 }
 .item-intro {
 	padding:8px 9px;
-	font-family:'Signika', Tahoma, sans-serif;
+	/*font-family:'Signika', Tahoma, sans-serif;*/
 	font-size:14px;
 	margin-bottom:16px;
     background-color:none;
@@ -1070,7 +1082,7 @@ body.innerpage #main {
 }
 
 .item-intro a{
-    color:#41647b;
+    color:#709431;
 }
 
 .item-intro a:hover{
@@ -1146,8 +1158,9 @@ body.innerpage #main {
 .yui-pg-page
 {
     margin:30px 0px 0px 5px;
-    padding:4px 10px 4px 10px;
+    padding:14px 10px 14px 10px;
 	font-size:16px;
+    color: #709431;
     background:url(images/nav_back.png) center no-repeat;
 }
 
@@ -1168,11 +1181,13 @@ body.innerpage #main {
 .yui-pg-previous
 {
     padding-left:10px;
+    color:#709431;
     
 }
 .yui-pg-next
 {
     padding-left:10px;
+    color:#709431;
 }
 
 
@@ -1258,7 +1273,7 @@ a.backbutton {
 
 .itemview {
 	margin-top:15px;
-	width:810px;
+	width:720px;
 }
 .item-main {
 	margin:17px 0;
@@ -1351,7 +1366,7 @@ a.setrightbottom {
 #related_competences a{
     
     font-size:18px;
-    color: #41647b;
+    color: #709431;
     
 }
 
@@ -1366,8 +1381,8 @@ a.setrightbottom {
 {
     font-size:20px;
     padding-top:20px;
-    color: #41647b;
-    border-bottom: 2px solid #41647b;
+    color: #709431;
+    border-bottom: 2px solid #709431;
     width:200px;
 }
 
@@ -1666,7 +1681,10 @@ a.disabled {
 
 
 /*VIEW ITEM PAGE*/
-
+/*
+ their dark green : #709431
+ their light green : #add14d
+ */
 .access, .reportaproblem {
 	padding:35px 0 0 0;
 	margin:22px 0 0 0px;
@@ -1737,19 +1755,20 @@ a.disabled {
     font-size:12px;
 }
 
+
 .forKomma{
-    color:#41647b;
+    color:#709431;
 }
 .forKomma:after{
-    color:#41647b;
+    color:#709431;
     content:", ";
 }
 .forKomma.last:after{
-    color:#41647b;
+    color:#709431;
     content:" ";
 }
 .forKomma.link:hover{
-    color:#41647b;
+    color:#709431;
 }
 
 /*ITEM VIEW*/

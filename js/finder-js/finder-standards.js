@@ -957,7 +957,7 @@ new Ajax.JSONRequest(SERVICE_URL, {
 
                
                var odd = "";
-               if(data.isOdd%2===1){odd="odd"}
+               if(data.isOdd%2===1){odd="odd_ak"}
                
                for(var i=0 , length=data.keywords.length; i<length;i++)
                {

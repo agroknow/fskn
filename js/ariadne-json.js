@@ -46,7 +46,7 @@ function getItemJSONP(urlTemp)
                 if(arrayWithJSONS[0].expressions[0].manifestations[0].parameter!==undefined)
                 {
                 if(arrayWithJSONS[0].expressions[0].manifestations[0].parameter=='text/html'){
-                jQuery('#itemThumb').append('<a href="'+arrayWithJSONS[0].expressions[0].manifestations[0].items[0].url+'"><img class="itemsMedia" src="http://open.thumbshots.org/image.aspx?url='+arrayWithJSONS[0].expressions[0].manifestations[0].items[0].url+'" /> </a>');
+                jQuery('#itemThumb').append('<a href="'+arrayWithJSONS[0].expressions[0].manifestations[0].items[0].url+'"><img class="itemsMedia" src="http://img.bitpixels.com/getthumbnail?code=72800&url='+arrayWithJSONS[0].expressions[0].manifestations[0].items[0].url+'" /> </a>');
                 
                 }else if(arrayWithJSONS[0].expressions[0].manifestations[0].parameter=='text/xml'){
                 jQuery('#itemThumb').append('<a href="'+arrayWithJSONS[0].expressions[0].manifestations[0].items[0].url+'"><img  src="../images/icons/xml.png" /> </a>');
@@ -70,12 +70,12 @@ function getItemJSONP(urlTemp)
                 
                 
                 }else{
-                jQuery('#itemThumb').append('<a href="'+arrayWithJSONS[0].expressions[0].manifestations[0].items[0].url+'"><img class="itemsMedia" src="http://open.thumbshots.org/image.aspx?url='+arrayWithJSONS[0].expressions[0].manifestations[0].items[0].url+'" /> </a>');
+                jQuery('#itemThumb').append('<a href="'+arrayWithJSONS[0].expressions[0].manifestations[0].items[0].url+'"><img class="itemsMedia" src="http://img.bitpixels.com/getthumbnail?code=72800&url='+arrayWithJSONS[0].expressions[0].manifestations[0].items[0].url+'" /> </a>');
                 
                 }
                 
                 }else{
-                jQuery('#itemThumb').append('<a href="'+arrayWithJSONS[0].expressions[0].manifestations[0].items[0].url+'"><img class="itemsMedia" src="http://open.thumbshots.org/image.aspx?url='+arrayWithJSONS[0].expressions[0].manifestations[0].items[0].url+'" /> </a>');
+                jQuery('#itemThumb').append('<a href="'+arrayWithJSONS[0].expressions[0].manifestations[0].items[0].url+'"><img class="itemsMedia" src="http://img.bitpixels.com/getthumbnail?code=72800&url='+arrayWithJSONS[0].expressions[0].manifestations[0].items[0].url+'" /> </a>');
                 
                 }
                 }
@@ -220,7 +220,7 @@ function getItemJSONP(urlTemp)
                 if(arrayWithJSONS[0].expressions[0].manifestations[0].parameter!==undefined)
                 {
                 if(arrayWithJSONS[0].expressions[0].manifestations[0].parameter=='text/html'){
-                jQuery('#itemThumb').append('<a href="'+arrayWithJSONS[0].expressions[0].manifestations[0].items[0].url+'"><img class="itemsMedia" src="http://open.thumbshots.org/image.aspx?url='+arrayWithJSONS[0].expressions[0].manifestations[0].items[0].url+'" /> </a>');
+                jQuery('#itemThumb').append('<a href="'+arrayWithJSONS[0].expressions[0].manifestations[0].items[0].url+'"><img class="itemsMedia" src="http://img.bitpixels.com/getthumbnail?code=72800&url='+arrayWithJSONS[0].expressions[0].manifestations[0].items[0].url+'" /> </a>');
                 
                 }else if(arrayWithJSONS[0].expressions[0].manifestations[0].parameter=='text/xml'){
                 jQuery('#itemThumb').append('<a href="'+arrayWithJSONS[0].expressions[0].manifestations[0].items[0].url+'"><img  src="../images/icons/xml.png" /> </a>');
@@ -244,12 +244,12 @@ function getItemJSONP(urlTemp)
                 
                 
                 }else{
-                jQuery('#itemThumb').append('<a href="'+arrayWithJSONS[0].expressions[0].manifestations[0].items[0].url+'"><img class="itemsMedia" src="http://open.thumbshots.org/image.aspx?url='+arrayWithJSONS[0].expressions[0].manifestations[0].items[0].url+'" /> </a>');
+                jQuery('#itemThumb').append('<a href="'+arrayWithJSONS[0].expressions[0].manifestations[0].items[0].url+'"><img class="itemsMedia" src="http://img.bitpixels.com/getthumbnail?code=72800&url='+arrayWithJSONS[0].expressions[0].manifestations[0].items[0].url+'" /> </a>');
                 
                 }
                 
                 }else{
-                jQuery('#itemThumb').append('<a href="'+arrayWithJSONS[0].expressions[0].manifestations[0].items[0].url+'"><img class="itemsMedia" src="http://open.thumbshots.org/image.aspx?url='+arrayWithJSONS[0].expressions[0].manifestations[0].items[0].url+'" /> </a>');
+                jQuery('#itemThumb').append('<a href="'+arrayWithJSONS[0].expressions[0].manifestations[0].items[0].url+'"><img class="itemsMedia" src="http://img.bitpixels.com/getthumbnail?code=72800&url='+arrayWithJSONS[0].expressions[0].manifestations[0].items[0].url+'" /> </a>');
                 
                 }
                 }

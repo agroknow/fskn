@@ -277,7 +277,7 @@ function initializeFinder(){
 		for (var i=0;i<FACET_TOKENS.length;i++)
         {
 			var fn = FACET_TOKENS[i];
-			div.push('<a href="#" id="'+fn+'" onclick="return false;" class="filter_parent opened"><span>'+FACET_LABELS[fn]+'</span></a><div id="'+fn+'_rbo" class="filter_child" style="display: block; overflow: hidden;height:auto;"></div>');
+			div.push('<a href="#" id="'+fn+'" onclick="return false;" class="filter_parent "><span>'+FACET_LABELS[fn]+'</span></a><div id="'+fn+'_rbo" class="filter_child" style="display: none; overflow: hidden;height:auto;"></div>');
 			
 		}
         
@@ -957,7 +957,7 @@ new Ajax.JSONRequest(SERVICE_URL, {
 
                
                var odd = "";
-               if(data.isOdd%2===1){odd="odd"}
+               if(data.isOdd%2===1){odd="odd_ak"}
                
                for(var i=0 , length=data.keywords.length; i<length;i++)
                {
