@@ -1,0 +1,1 @@
+define(["underscore","backbone","js/core/coursera"],function(e,t){var n=t.View.extend({name:"banner",className:"coursera-banner",attributes:{role:"navigation"}});return n});
