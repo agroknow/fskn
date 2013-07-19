@@ -611,7 +611,8 @@ nav #jMenu li ul li a:hover {
 #search_status /*indicator of processing time in left menu*/
 {
     color:#709431;
-    margin:10px 0px 15px 15px;
+    margin:15px 0px 3px 15px;
+    font-size:16px;
 }
 
 .left_details /*details of the above items (results & processing time)*/

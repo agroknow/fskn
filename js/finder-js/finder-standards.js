@@ -589,7 +589,7 @@ function findMaterials(start,numberResults,needsUpdate,initUpdate){
                         if(!$F('query').blank())
                         $('search_terms').update($F('query'));
                         
-                        $('search_status').update('Searching...');
+                        /*$('search_status').update('Searching...');*/
                         $('noResults').hide();
                         
 new Ajax.JSONRequest(SERVICE_URL, {
@@ -616,7 +616,7 @@ new Ajax.JSONRequest(SERVICE_URL, {
  $('noResults').hide();
   
                      
- $('search_status').update('Processing time: <br> <span class="left_details">' + (result.processingTime/1000).toFixed(3) + ' seconds</span>');
+ /*$('search_status').update('Processing time: <br> <span class="left_details">' + (result.processingTime/1000).toFixed(3) + ' seconds</span>');*/
  
  if(initUpdate){
  $('searchMessage').insert('<h3 align="center">Available: '+formatInteger(result.nrOfResults,',')+' learning resources</h3>');
