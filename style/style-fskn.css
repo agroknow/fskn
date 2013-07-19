@@ -930,6 +930,9 @@ body.innerpage #main {
 	padding:7px 13px 7px 20px;
 	position:relative;
     font-size:13px;
+    border-right: 1px solid #709431;
+    border-left: 1px solid #709431;
+    border-bottom: 1px solid #709431;
     /*height:25px;*/
 }
 .filter_child a:hover
