@@ -58,7 +58,7 @@ h3 {
 html, body {height: 100%;}
 #wrap {min-height: 100%;width:100%}
 #main {/*overflow:auto;*/ /*padding-bottom:352px;*/}  /* must be same height as the footer */
-footer#mainfooter, #footer {
+/*footer#mainfooter, #footer {
 	position: relative;
 	margin-top:-352px; /* negative value of footer height */
 	height:352px;
@@ -66,7 +66,7 @@ footer#mainfooter, #footer {
 }
 footer#mainfooter {
 	background:url(images/footer_bg_line.jpg) 0 0 repeat-x;
-}
+}*/
 /*Opera Fix*/
 body:before {
 	content:"";
@@ -703,7 +703,7 @@ li.slider_page_listitem > a {
 }
 li.slider_page_listitem > div {
 	/*margin-left:172px;*/
-	width:450px;
+	width:550px;
 }
 li.slider_page_listitem > div p {
 	line-height:1.1em;

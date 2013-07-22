@@ -53,15 +53,7 @@ h3 {
 html, body {height: 100%;}
 #wrap {min-height: 100%;width:100%}
 #main {/*overflow:auto;*/ /*padding-bottom:352px;*/}  /* must be same height as the footer */
-footer#mainfooter, #footer {
-	position: relative;
-	margin-top:-352px; /* negative value of footer height */
-	height:352px;
-	clear:both;
-}
-footer#mainfooter {
-	background:url(images/footer_bg_line.jpg) 0 0 repeat-x;
-}
+
 /*Opera Fix*/
 body:before {
 	content:"";
