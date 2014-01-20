@@ -32,7 +32,7 @@ function getItemJSONP(urlTemp)
                 jQuery('#related_competences').append(relatedHeader);//header for related content IF it exists
                 for(var indx=0, length = test.learningObjectives.agricomp.length; indx<length; indx++)
                 {
-                    getCompetence('http://83.212.96.219:8080/akifRetriever/getAKIF?ids='+test.learningObjectives.agricomp[indx]);
+                    getCompetence('http://54.228.180.124:8080/akifRetriever/getAKIF?ids='+test.learningObjectives.agricomp[indx]);
                 }
                 }
                 
